@@ -26,7 +26,9 @@ To start the Pirates of Web game, follow these steps:
 ## Game Flow
 
 The game consists of 7 riddles, 2 dead ends, and 1 correct path. Players must carefully read the prompts, understand the clues provided with each riddle, and come up with the correct answer to proceed to the next challenge. Beware of the dead ends, as they may lead to a temporary halt in the treasure hunt.
-NOTE: Please refer the answers.md file for answers of the riddles.
+
+**NOTE**: Please refer the answers.md file for answers of the riddles.
+
 
 ## User Entities
 
