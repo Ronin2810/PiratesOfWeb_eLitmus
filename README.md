@@ -29,7 +29,7 @@ The game consists of 7 riddles, 2 dead ends, and 1 correct path. Players must ca
 
 **NOTE**: Please refer the answers.md file for answers of the riddles.
 
-# Features
+## Features
 
 1. **Load Game**: The player can continue from where they left off in the previous session. The game saves the progress of the player, allowing them to resume their riddle-solving journey seamlessly.
 
