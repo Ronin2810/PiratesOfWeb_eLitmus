@@ -29,6 +29,21 @@ The game consists of 7 riddles, 2 dead ends, and 1 correct path. Players must ca
 
 **NOTE**: Please refer the answers.md file for answers of the riddles.
 
+## Features
+
+1. **Load Game**: The player can continue from where they left off in the previous session. The game saves the progress of the player, allowing them to resume their riddle-solving journey seamlessly.
+
+2. **Hover Effects**: The clues are cleverly hidden inside the images displayed below the riddle prompt. By hovering over these images, players can reveal additional hints or vital information to help them solve the riddles more effectively. This feature adds an element of discovery and intrigue to the gameplay.
+
+3. **Admin Dashboard**: The admin of the riddle game has access to a dedicated dashboard. This powerful tool enables the admin to track the progress of all the users playing the riddle. The admin can monitor various metrics, such as the number of riddles solved, time taken to solve each riddle, and overall user engagement. This feature provides valuable insights to the admin, allowing them to analyze user behavior and make informed decisions for game improvements.
+
+4. **Player Dashboard**: Each user has their own personalized dashboard within the riddle game. From this dashboard, players have convenient options to either restart the game or continue from where they left off. This flexibility empowers the players to tailor their gaming experience according to their preferences. They can start afresh if they want a new challenge or pick up where they left off to continue their progress. The player dashboard provides a user-friendly interface that enhances the overall user experience and engagement.
+
+5. **Password Encryption**: The users' passwords are in safe hands because only the encrypted passwords (done via bcrypt-js) are stored in the database. This ensures that sensitive user information remains secure and protected from unauthorized access.
+
+6. **Session Management**: This feature ensures a seamless and secure user experience by maintaining user-specific data across multiple page requests. It allows the game to remember the player's progress, preferences, and other relevant information, creating a personalized and uninterrupted gaming experience.
+
+These features collectively enhance the gameplay experience, offering convenience, personalization, and an immersive journey of solving intriguing riddles. Whether you're a player looking for an engaging adventure or an admin seeking to manage and analyze user data efficiently, this riddle game provides a rich set of features to cater to your needs.
 
 ## User Entities
 
