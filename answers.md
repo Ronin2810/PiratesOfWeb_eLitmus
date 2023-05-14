@@ -1,4 +1,4 @@
-# Quiz
+# Riddles
 
 ## Question 1
 See the stallions race, with passion in their stride,  
