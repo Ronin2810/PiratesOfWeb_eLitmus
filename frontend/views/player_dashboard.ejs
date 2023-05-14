@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='description' content='This is my first html page'>
+        <link rel='stylesheet' href='/css/player_dashboard.css'>
+        <script src='/js/player_dashboard.js' async defer></script>
+        <title>
+            Player Dashboard
+        </title>
+    </head>
+    <body>
+        <%- include('partials/player_header') %>
+        <a href="/logout"><div class="logout-btn" >Logout</div></a>
+
+        <div class="greeting"><h2 class="greet">Hello <span class="name"><%=name%></span>, Welcome to Pirates of Web</h2></div>
+
+        <div class="menu">
+            <div class="restart">
+                <a href="/player/riddle/restart">
+                    <img src="/media/restart.png" alt="Restart" class="restart-icon">
+                    <div class="button-label">Restart</div>
+                </a>
+            </div>
+    
+            <div class="play">
+                <a href="/player/riddle/continue">
+                    <img src="/media/play.png" alt="Play" class="play">
+                    <div class="button-label">Play</div>
+                </a>
+            </div>
+        </div>
+
+        <%- include('partials/footer') %>
+    </body>
+</html>

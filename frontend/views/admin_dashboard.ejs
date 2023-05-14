@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='description' content='This is my first html page'>
+        <link rel='stylesheet' href='/css/admin_dashboard.css'>
+        <script src='/js/admin_dashboard.js' async defer></script>
+        <title>
+            Admin Dashboard
+        </title>
+    </head>
+    <body>
+        <%- include('partials/admin_header') %>
+        <a href="/logout"><div class="logout-btn" >Logout</div></a>
+        <div class="user-status">
+            <!-- we will show all users and their progress in the riddle -->
+            <h1 class="table-title">Player Progress</h1>
+            <table>
+                <thead>
+                  <tr>
+                    <th>User ID</th>
+                    <th>User Name</th>
+                    <th>Progress</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% data.forEach(function(row) { %>
+                    <tr>
+                      <td><%= row.user_id %></td>
+                      <td><%= row.user_name %></td>
+                      <td><button class="dropdown" id="<%= row.user_id %>">📈</button></td>
+                      <div class="progress-image" id="progress-image-<%= row.user_id %>" >
+                        <div class="close-btn" id="close-btn-<%= row.user_id %>">X</div>
+                        <img src="/media/q<%= row.question_no %>.png" alt="image not visible" id="progress-image-<%= row.user_id %>">
+                      </div>
+                    </tr>
+                  <% }); %>
+                </tbody>
+              </table>
+        </div>
+    <%- include('partials/footer') %>
+    </body>
+</html>

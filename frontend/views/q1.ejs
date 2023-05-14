@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='description' content='This is my first html page'>
+        <link rel='stylesheet' href='/css/question.css'>
+        <script src='./script.js' async defer></script>
+        <title>
+            Riddle 1
+        </title>
+    </head>
+    <body>
+        <div class="header">
+            <%- include('partials/player_header') %>
+        </div>
+        <div class="riddle">
+            <p>See the stallions race, with passion in their stride,
+                Their manes flowing with the wind, a sight to behold with pride.
+                Amidst this majestic scene, a legend was born,
+                Whose name echoes through time like the neighs of a faithful stallion.
+                Follow the trail of the racing horses, and the answer shall be unveiled.</p><br>
+            <form method="post" action="/player/riddle/q/1">
+                <input type="text" name="answer" id="answer" required placeholder="Write your answer here">
+                <span class="wrong-answer"><%=msg%></span>
+                <div class="hint" style="position: relative; display: inline-block;">
+                    <img src="/media/r1.jpg" alt="image not visible">
+                    <a href="https://upload.wikimedia.org/wikipedia/commons/7/75/Enzo_Ferrari_Monza_1967.jpg" class="hidden-text-1" target="_blank">ans</a>
+                </div>
+                <div class="buttons">
+                    <button type="submit" class="go-btn" style="margin-left: 405px;">Go</button>
+                </div>
+            </form>
+        </div> 
+    </body>
+</html>

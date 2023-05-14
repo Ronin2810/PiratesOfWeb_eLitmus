@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='description' content='This is my first html page'>
+        <link rel='stylesheet' href='/css/question.css'>
+        <script src='./script.js' async defer></script>
+        <title>
+            Riddle 4
+        </title>
+    </head>
+    <body>
+        <div class="header">
+            <%- include('partials/player_header') %>
+        </div>
+        <div class="riddle">
+            <p>In the theater of old, two tanks took flight,
+                One allied grace, one darkness in sight.
+                Engines roared, shells clashed with thunderous sound,
+                Their legacy echoes, names yet unfound.
+                Can you unravel the tale they enshrine,
+                Whispered by history's eternal design?</p><br>
+            <form method="post" action="/player/riddle/q/4">
+                <input type="text" name="answer" id="answer" required placeholder="Write your answer here">
+                <span class="wrong-answer"><%=msg%></span>
+                <div class="hint" style="position: relative; display: inline-block;">
+                    <img src="/media/r4.jpg" alt="image not visible">
+                    <a href="https://www.bentleymotors.com/en.html" class="hidden-text-4" target="_blank">A</a>
+                    <a href="https://www.bmw.com/en/index.html" class="hidden-text-3" target="_blank">B</a>
+
+                </div>
+                <div class="buttons">
+                    <div class="go-back">
+                        <button class="go-back-btn"><a href="/player/riddle/q/2"> Back</a></button>
+                    </div> 
+                    <button type="submit" class="go-btn">Go</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

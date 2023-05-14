@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='description' content='This is my first html page'>
+        <link rel='stylesheet' href='/css/question.css'>
+        <script src='./script.js' async defer></script>
+        <title>
+            Riddle 7
+        </title>
+    </head>
+    <body>
+        <div class="header">
+            <%- include('partials/player_header') %>
+        </div>
+        <div class="riddle">
+            <p>A man's hands embrace a gem untold.
+                Melodies, like whispers, weave their art,
+                A riddle whispered to your heart:
+                
+                Amidst the symphony of secrets concealed,
+                Which noble steed, with elegance revealed,
+                Graced the Bond's world, with prowess and grace,
+                In 007's embrace, a legendary chase?
+                </p><br>
+            <form method="post" action="/player/riddle/q/7">
+                <input type="text" name="answer" id="answer" required placeholder="Write your answer here">
+                <span class="wrong-answer"><%=msg%></span>
+                <div class="hint">
+                    <img src="/media/r7.jpg" alt="image not visible">
+                    <audio controls>
+                        <source src="/media/daf.mp3" type="audio/mpeg">
+                        Doesn't support audio element
+                    </audio>
+                </div>
+                <div class="buttons">
+                    <div class="go-back">
+                        <button class="go-back-btn"><a href="/player/riddle/q/6"> Back</a></button>
+                    </div>
+                    <button type="submit" class="go-btn">Go</button>
+                </div>
+            </form>
+        </div> 
+    </body>
+</html>

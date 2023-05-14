@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='description' content='This is my first html page'>
+        <link rel='stylesheet' href='/css/login.css'>
+        <script src='/js/login.js' async defer></script>
+        <title>
+            Login
+        </title>
+    </head>
+    <body>
+    <%- include('partials/header') %>
+        <div class="login">
+            <h1 id="form-heading" >Login</h1>
+
+            <form method="post" id="form" onsubmit="return validateLogin()">
+                <div class="input-field">
+                    <select name="entity" id="entity" required>
+                        <option class="entity-option" value="">Please Select an Option</option>
+                        <option class="entity-option" value="admin">Admin</option>
+                        <option class="entity-option" value="player">Player</option>
+                    </select>
+                    <span id="err-entity"></span>
+                </div>
+
+                <div class="input-field">
+                    <label for="email">What's Your Email ? <span class="required-field">*</span></label>
+                    <input type="email" name="email" id="email" required placeholder="Enter your Email">
+                    <span id="err-email"></span>
+                </div>
+                <br>
+                <div class="input-field">
+                    <label for="password">What's Your Password: <span class="required-field">*</span></label>
+                    <input type="password" name="password" id="password" required placeholder="Enter your Password">
+                    <span id="err-password"></span>
+                </div>
+                <br>
+                <button type="submit" >LOGIN</button><br>
+                <div class="err-backend"><%=err%></div>
+                <div class="not-registered">
+                    <p>Not Registered ? <a id="login-link" href="/register">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </body>
+    <%- include('partials/footer') %>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='description' content='This is my first html page'>
+        <link rel='stylesheet' href='/css/question.css'>
+        <script src='./script.js' async defer></script>
+        <title>
+            Riddle 2
+        </title>
+    </head>
+    <body>
+        <div class="header">
+            <%- include('partials/player_header') %>
+        </div>
+        <div class="riddle">
+            <p>In a realm where speed's revered, behold two tractors, each revered. One ablaze with fiery flair, the other sleek, a midnight air. A crimson symbol, might untamed, a road dominator, widely acclaimed. The other whispers, grace refined, a stealthy masterpiece, a gem defined. Can you unlock their mystic lore, the names they bear, sought evermore?</p><br>
+            <form method="post" action="/player/riddle/q/2">
+                <input type="text" name="answer" id="answer" required placeholder="Write your answer here">
+                <span class="wrong-answer"><%=msg%></span>
+                <div class="hint" style="position: relative; display: inline-block;">
+                    <img src="/media/r2.jpg" alt="image not visible">
+                    <a href="https://ferrari-cdn.thron.com/delivery/public/thumbnail/ferrari/11ba63f1-68c2-4932-9746-4b602c22713f/bocxuw/std/0x0/cover_f1-sf23_video_beauty_76?v=120&dpr=263" class="hidden-text-1" target="_blank">F</a>
+                    <a href="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Lamborghini_Logo.svg/640px-Lamborghini_Logo.svg.png" class="hidden-text-2" target="_blank">L</a>
+                </div>
+                <div class="buttons">
+                    <div class="go-back">
+                        <button class="go-back-btn"><a href="/player/riddle/q/1"> Back</a></button>
+                    </div>
+                    <button type="submit" class="go-btn">Go</button>
+                </div>
+            </form>
+        </div> 
+    </body>
+</html>

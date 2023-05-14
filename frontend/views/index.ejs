@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='description' content='This is my first html page'>
+    <link rel='stylesheet' href='/css/index.css'>
+    <script src='' async defer></script>
+    <title>
+        Home
+    </title>
+</head>
+
+<body>
+    <%- include('partials/header') %>
+    <div class="main">
+        <div class="title"><h1>Pirates of the Web</h1></div>
+        <p class="welcome-about" >Get ready to put your thinking caps on! Pirates of the Web is a game of riddles and puzzles where you need to solve clues to progress through the levels.</p>
+        <br>
+        <div class="action-wrapper">
+            <div class="actions">
+                <a class="action-link" href="/login"><div class="action">Login</div></a>
+                <a class="action-link" href="/register"><div class="action">Register</div></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="items">
+        <div class="grid-item">
+            <div class="grid-item-heading">Rule #1 &ensp;&ensp;<span class="icon">⭐</span></div>
+            <br>
+            <p>You will be presented with a riddle based on the theme "Cars" that you need to solve</p>
+        </div>
+        <div class="grid-item">
+            <div class="grid-item-heading">Rule #2 &ensp;&ensp;<span class="icon">🤔</span></div>
+            <br>
+            <p>Use your knowledge and critical thinking to solve the riddle.</p>
+        </div>
+        <div class="grid-item">
+            <div class="grid-item-heading">Rule #3 &ensp;&ensp;<span class="icon">➡️</span></div>
+            <br>
+            <p>Once you have solved the riddle, you will move on to the next level</p>
+        </div>
+        <div class="grid-item">
+            <div class="grid-item-heading">Rule #4 &ensp;&ensp;<span class="icon">🪜</span></div>
+            <br>
+            <p>There are a total of 5 correct riddles to complete</p>
+        </div>
+        <div class="grid-item">
+            <div class="grid-item-heading">Rule #5 &ensp;&ensp;<span class="icon">💡</span></div>
+            <br>
+            <p>You can use hints if you get stuck they may be hidden inside the clue</p>
+        </div>
+        <div class="grid-item">
+            <div class="grid-item-heading">Rule #06 &ensp;&ensp;<span class="icon">🚫</span></div>
+            <br>
+            <p>Beware of Deadends !</p>
+        </div>
+    </div>
+
+    <%- include('partials/footer') %>
+</body>
+
+</html>

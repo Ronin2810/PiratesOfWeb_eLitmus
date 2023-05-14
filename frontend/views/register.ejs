@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='description' content='This is my first html page'>
+        <link rel='stylesheet' href='/css/register.css'>
+        <script src='/js/register.js' async defer></script>
+        <title>
+            Register
+        </title>
+    </head>
+    <body>
+    <%- include('partials/header') %>
+        <div class="register">
+            <h1 id="form-heading">Register</h1>
+
+            <form action="/register" onsubmit="return validateRegister()" method="post">
+                <div class="input-field">
+                    <label for="name">What's Your Name ? <span class="required-field">*</span></label>
+                    <input type="text" name="name" id="name" placeholder="Enter your Name">
+                    <span class="error" id="err-name"></span>
+                </div>
+                <br>
+                <div class="input-field">
+                    <label for="email">What's Your Email ? <span class="required-field">*</span></label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email">
+                    <span class="error" id="err-email"></span>
+                </div>
+                <br>
+                <div class="input-field">
+                    <label for="password">What's Your Password ? <span class="required-field">*</span></label>
+                    <input type="password" name="password" id="password" placeholder="Enter your Password">
+                    <span class="error" id="err-password"></span>
+                </div>
+                <br>
+                <div class="input-field">
+                    <label for="confirm-password">Confirm Your Password: <span class="required-field">*</span></label>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Enter your Password">
+                    <span class="error" id="err-confirm-password"></span>
+                </div>
+                <br>
+
+                <button type="submit">REGISTER</button>
+
+                <div class="already-registered">
+                    <p>Already Registered? <a id="register-link" href="/login">Login</a></p>
+                </div>
+            </form>
+        </div>
+    <%- include('partials/footer') %>
+    </body>
+</html>

@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Chinese Quotes", "Inter var", Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #1e1e20;
+  color: #FFFFFF;
+}
+
+
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: #161618;
+  color: #fff;
+  padding: 20px;
+}
+
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover {
+  color: #646cff;
+}
+
+.main{
+  width: 972px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.main .welcome-about {
+  width: auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 20px;
+
+  color: #ffcb23;
+  z-index: 10;
+}
+/*
+.title {
+  margin: auto;
+  background-image: url("../media/bg.jpg");
+  background: linear-gradient(to right, #60a9ff, #bd34fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: fit-content;
+} */
+
+.welcome-about {
+  font-size: 24px;
+  color: #969faf;;
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #00FF00;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: #008000;
+}
+
+.items {
+  align-content: center;
+  align-items: center;
+  width: 1090px;
+  height: 428px;
+  padding: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.grid-item {
+  margin: 8px;
+  width: 300px;
+  height: 170px;
+  box-sizing: border-box;
+  display: block;
+  float: none;
+  line-height: 24px;
+  position: static;
+  z-index :auto;
+  padding: 24px;
+  background-color: rgba(60, 60, 67, .33);
+  border-radius: 10px;
+}
+
+.grid-item p {
+  color: #969faf;
+  font-size: 18px;
+}
+
+.welcome-about {
+  width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.action-wrapper {
+  margin-left: 35%;
+}
+
+.actions {
+  display: flex;
+  height: auto;
+  width: auto;
+}
+
+.action {
+  height: 38px;
+  margin: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #646cff;
+  border-radius: 20px;
+  padding-top: 7px;
+}
+
+.action-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.action-link :hover {
+  background-color: #313136;
+}
+
+footer {
+  background-color: #161618;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.icon {
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 8px;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  background-color: #1e1e20;
+}
