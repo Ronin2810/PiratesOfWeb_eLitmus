@@ -20,8 +20,9 @@ To start the Pirates of Web game, follow these steps:
 2. Run the frontend application by moving in the backend directory: 
     `cd frontend`
     `npm start`
- 
-3. Access the game through your web browser: `http://localhost:5555`
+3. The backend server will be running on : `http://localhost:5000`
+
+4. Access the game through your web browser: `http://localhost:5555`
 
 ## Game Flow
 
