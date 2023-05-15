@@ -4,7 +4,10 @@ Welcome to Pirates of Web, an exciting online treasure hunt game based on the th
 
 **Hosting Link** : https://pirates-of-the-web.onrender.com/
 
-**Note**:  Please use a PC/Laptop for a better user experience.
+**Note**:  
+        1. Please use a PC/Laptop for a better user experience.
+        2. There might be some delay in loading of some pages due to usage hosting website's free version of hosting.
+        3. In case of any queries, you can contact the developer at adityapatilsy@gmail.com .
 
 ## Installation
 
