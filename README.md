@@ -2,6 +2,10 @@
 
 Welcome to Pirates of Web, an exciting online treasure hunt game based on the theme of cars! In this game, players will embark on a thrilling journey filled with riddles, clues, and the quest to find the ultimate treasure. The project is built using Node.js, Express.js, HTML, CSS, JavaScript, and MySQL.
 
+**Hosting Link** : https://pirates-of-the-web.onrender.com/
+
+**Note**:  Please use a PC/Laptop for a better user experience.
+
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/Ronin2810/eLitmus_PiratesOfWeb.git`
